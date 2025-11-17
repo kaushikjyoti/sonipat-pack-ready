@@ -3,6 +3,7 @@ import Footer from "@/components/layout/Footer";
 import WhatsAppButton from "@/components/layout/WhatsAppButton";
 import Hero from "@/components/home/Hero";
 import Services from "@/components/home/Services";
+import WhyChooseUs from "@/components/home/WhyChooseUs";
 import PricingTeaser from "@/components/home/PricingTeaser";
 import Testimonials from "@/components/home/Testimonials";
 import LeadForm from "@/components/home/LeadForm";
@@ -14,6 +15,7 @@ const Home = () => {
       <main className="flex-grow">
         <Hero />
         <Services />
+        <WhyChooseUs />
         <PricingTeaser />
         <Testimonials />
         <LeadForm />

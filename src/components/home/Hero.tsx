@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Phone } from "lucide-react";
+import heroImage from "@/assets/hero-movers.jpg";
 
 const Hero = () => {
   const scrollToForm = () => {
@@ -54,14 +55,14 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Image Placeholder - Will be generated */}
+          {/* Image */}
           <div className="relative">
-            <div className="aspect-square rounded-2xl bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center">
-              <div className="text-center p-8">
-                <div className="text-6xl mb-4">🚚</div>
-                <p className="text-2xl font-semibold text-primary">Professional Moving Services</p>
-                <p className="text-muted-foreground mt-2">Safe, Fast & Reliable</p>
-              </div>
+            <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
+              <img
+                src={heroImage}
+                alt="Professional packers and movers team loading boxes into truck in Sonipat"
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
         </div>
