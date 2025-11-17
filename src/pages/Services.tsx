@@ -1,6 +1,7 @@
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import WhatsAppButton from "@/components/layout/WhatsAppButton";
+import ServiceShowcase from "@/components/services/ServiceShowcase";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Home, Building2, Truck, Package, Warehouse, MoveVertical, Car, Shield } from "lucide-react";
@@ -150,6 +151,9 @@ const Services = () => {
             </div>
           </div>
         </section>
+
+        {/* Service Showcase Gallery */}
+        <ServiceShowcase />
 
         {/* CTA Section */}
         <section className="py-20 bg-primary text-primary-foreground">
