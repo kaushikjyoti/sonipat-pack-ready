@@ -13,9 +13,9 @@ import BlogPost from "./pages/BlogPost";
 import Contact from "./pages/Contact";
 import PackersAndMoversSonipat from "./pages/PackersAndMoversSonipat";
 import TestimonialsPage from "./pages/TestimonialsPage";
+import NotFound from "./pages/NotFound";
 import PackersAndMoversKundli from "./pages/PackersAndMoversKundli";
 import PackersAndMoversRai from "./pages/PackersAndMoversRai";
-import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
