@@ -1,13 +1,14 @@
 import React from "react";
-import { Helmet } from "react-helmet";
 
 const PackersAndMoversKundli = () => {
   return (
     <>
-      <Helmet>
-        <title>Packers and Movers Kundli, Sonipat | ₹4,500+ | Insured Shifting</title>
-        <meta name="description" content="Best packers and movers in Kundli, Sonipat. Home & office shifting starting ₹4,500. Kundli to Delhi ₹7,500+. 100% insured, 24×7 service. Call/WhatsApp +91 90686 62191" />
-      </Helmet>
+      {/* SEO Tags – works perfectly without react-helmet */}
+      <title>Packers and Movers Kundli, Sonipat | ₹4,500+ | Insured Shifting</title>
+      <meta
+        name="description"
+        content="Best packers and movers in Kundli, Sonipat. Home & office shifting starting ₹4,500. Kundli to Delhi ₹7,500+. 100% insured, 24×7 service. Call/WhatsApp +91 90686 62191"
+      />
 
       <div className="min-h-screen bg-gray-50 py-12">
         <div className="max-w-5xl mx-auto px-6">
@@ -35,7 +36,9 @@ const PackersAndMoversKundli = () => {
 
           <div className="prose prose-lg max-w-none mb-12">
             <h2>Why Choose Us for Kundli Shifting?</h2>
-            <p>We have been serving Kundli Industrial Area, Sector 54, Sector 55, Kundli Border and nearby societies since 2025 with <strong>100% damage-free record</strong>. Our team knows every lane of Kundli – from Maruti Suzuki plant to DS Group factory – and provides door-to-door service with professional packing using bubble wrap, corrugated sheets and strong boxes.</p>
+            <p>
+              We have been serving Kundli Industrial Area, Sector 54, Sector 55, Kundli Border and nearby societies since 2025 with <strong>100% damage-free record</strong>. Our team knows every lane of Kundli – from Maruti Suzuki plant to DS Group factory – and provides door-to-door service with professional packing using bubble wrap, corrugated sheets and strong boxes.
+            </p>
 
             <h2>Latest 2025 Rates – Kundli Packers and Movers</h2>
             <ul>
@@ -54,7 +57,10 @@ const PackersAndMoversKundli = () => {
           </div>
 
           <div className="text-center">
-            <a href="https://wa.me/919068662191?text=Hi!%20I%20need%20shifting%20quote%20from%20Kundli%20🚛" className="inline-block bg-green-600 hover:bg-green-700 text-white font-bold text-xl py-5 px-12 rounded-xl">
+            <a
+              href="https://wa.me/919068662191?text=Hi!%20I%20need%20shifting%20quote%20from%20Kundli%20🚛"
+              className="inline-block bg-green-600 hover:bg-green-700 text-white font-bold text-xl py-5 px-12 rounded-xl"
+            >
               Get Free Quote → WhatsApp +91 90686 62191
             </a>
           </div>
