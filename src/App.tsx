@@ -13,6 +13,8 @@ import BlogPost from "./pages/BlogPost";
 import Contact from "./pages/Contact";
 import PackersAndMoversSonipat from "./pages/PackersAndMoversSonipat";
 import TestimonialsPage from "./pages/TestimonialsPage";
+import PackersAndMoversKundli from "./pages/PackersAndMoversKundli";
+import PackersAndMoversRai from "./pages/PackersAndMoversRai";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -53,7 +55,7 @@ const App = () => {
             <Route path="/testimonials" element={<TestimonialsPage />} />
             <Route path="*" element={<NotFound />} />
             <Route path="/packers-and-movers-kundli" element={<PackersAndMoversKundli />} />
-<Route path="/packers-and-movers-rai-sonipat" element={<PackersAndMoversRai />} />
+            <Route path="/packers-and-movers-rai-sonipat" element={<PackersAndMoversRai />} />
           </Routes>
                  {/* ========= EXIT-INTENT POPUP – ₹500 OFF ========= */}
           <div id="exitPopup" className="fixed inset-0 bg-black bg-opacity-70 z-[9999] hidden flex items-center justify-center px-4">
