@@ -12,6 +12,12 @@ import Blog from "./pages/Blog";
 import BlogPost from "./pages/BlogPost";
 import Contact from "./pages/Contact";
 import PackersAndMoversSonipat from "./pages/PackersAndMoversSonipat";
+import PackersAndMoversKundli from "./pages/PackersAndMoversKundli";
+import PackersAndMoversRai from "./pages/PackersAndMoversRai";
+import PackersAndMoversGanaur from "./pages/PackersAndMoversGanaur";
+import PackersAndMoversMurthal from "./pages/PackersAndMoversMurthal";
+import PackersAndMoversBarhi from "./pages/PackersAndMoversBarhi";
+import PackersAndMoversKharkhoda from "./pages/PackersAndMoversKharkhoda";
 import TestimonialsPage from "./pages/TestimonialsPage";
 import NotFound from "./pages/NotFound";
 
@@ -50,6 +56,12 @@ const App = () => {
             <Route path="/blog/:slug" element={<BlogPost />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/packers-and-movers-sonipat" element={<PackersAndMoversSonipat />} />
+            <Route path="/packers-and-movers-kundli" element={<PackersAndMoversKundli />} />
+            <Route path="/packers-and-movers-rai-sonipat" element={<PackersAndMoversRai />} />
+            <Route path="/packers-and-movers-ganaur" element={<PackersAndMoversGanaur />} />
+            <Route path="/packers-and-movers-murthal" element={<PackersAndMoversMurthal />} />
+            <Route path="/packers-and-movers-barhi" element={<PackersAndMoversBarhi />} />
+            <Route path="/packers-and-movers-kharkhoda" element={<PackersAndMoversKharkhoda />} />
             <Route path="/testimonials" element={<TestimonialsPage />} />
             <Route path="*" element={<NotFound />} />
           </Routes>

@@ -6,14 +6,24 @@ import { Button } from "@/components/ui/button";
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const [isCitiesOpen, setIsCitiesOpen] = useState(false);
+
   const navigation = [
     { name: "Home", href: "/" },
     { name: "Services", href: "/services" },
-    { name: "Sonipat to Delhi", href: "/sonipat-to-delhi" },
     { name: "Pricing", href: "/pricing" },
     { name: "Testimonials", href: "/testimonials" },
-    { name: "Blog", href: "/blog" },
     { name: "Contact", href: "/contact" },
+  ];
+
+  const cityPages = [
+    { name: "Sonipat", href: "/packers-and-movers-sonipat" },
+    { name: "Kundli", href: "/packers-and-movers-kundli" },
+    { name: "Rai", href: "/packers-and-movers-rai-sonipat" },
+    { name: "Ganaur", href: "/packers-and-movers-ganaur" },
+    { name: "Murthal", href: "/packers-and-movers-murthal" },
+    { name: "Barhi", href: "/packers-and-movers-barhi" },
+    { name: "Kharkhoda", href: "/packers-and-movers-kharkhoda" },
   ];
 
   return (
@@ -39,6 +49,31 @@ const Header = () => {
                 {item.name}
               </Link>
             ))}
+            <div className="relative">
+              <button
+                onClick={() => setIsCitiesOpen(!isCitiesOpen)}
+                className="text-sm font-medium text-foreground hover:text-primary transition-colors flex items-center gap-1"
+              >
+                Cities
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              {isCitiesOpen && (
+                <div className="absolute top-full right-0 mt-2 w-48 bg-background border border-border rounded-lg shadow-lg py-2 z-50">
+                  {cityPages.map((city) => (
+                    <Link
+                      key={city.name}
+                      to={city.href}
+                      onClick={() => setIsCitiesOpen(false)}
+                      className="block px-4 py-2 text-sm text-foreground hover:bg-muted hover:text-primary transition-colors"
+                    >
+                      {city.name}
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
           </div>
 
           {/* Phone CTA */}
@@ -85,6 +120,34 @@ const Header = () => {
                   {item.name}
                 </Link>
               ))}
+              <div className="px-3 py-2">
+                <button
+                  onClick={() => setIsCitiesOpen(!isCitiesOpen)}
+                  className="flex items-center justify-between w-full text-base font-medium text-foreground hover:text-primary"
+                >
+                  Cities
+                  <svg className={`w-5 h-5 transition-transform ${isCitiesOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
+                </button>
+                {isCitiesOpen && (
+                  <div className="mt-2 ml-4 space-y-2">
+                    {cityPages.map((city) => (
+                      <Link
+                        key={city.name}
+                        to={city.href}
+                        onClick={() => {
+                          setIsMenuOpen(false);
+                          setIsCitiesOpen(false);
+                        }}
+                        className="block px-3 py-2 text-sm text-foreground hover:text-primary hover:bg-muted rounded-md"
+                      >
+                        {city.name}
+                      </Link>
+                    ))}
+                  </div>
+                )}
+              </div>
               <div className="px-3 pt-3 border-t">
                 <a
                   href="tel:+919068662191"
